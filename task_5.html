@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 5</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="container"></div>
+
+	<script>
+	    let divContainer = document.getElementById("container");
+		function randomNumbers() {
+			let number = Math.floor(Math.random() * 20);
+			divContainer.innerHTML += "<div class='element'>" + number + "</div>";
+		}
+		setInterval(randomNumbers, 5000);
+	</script>
+
+</body>
+</html>
